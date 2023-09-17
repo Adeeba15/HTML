@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOrms</title>
+</head>
+<body>
+    <!-- FORM -->
+    <form method="post" enctype="multipart/form-data" >
+        <div>
+        <label for="email">email</label>
+        <input id="email" name="email" placeholder="abc@gmail.com" type="email" autocomplete="off">
+    </div>
+        <div>
+        <label for="uname">username</label>
+        <input id="uname" name="uname" type="text" required>
+    </div>
+        <div>
+        <label for="pass">password</label>
+        <input id="pass" name="pass" placeholder="xyz123" type="password" size="50">
+    </div>
+        <div>
+        <label for="web">website</label>
+        <input id="web" name="web" placeholder="www.fhjf.com" type="url">
+    </div>
+        <div>
+        <label for="num">phone number</label>
+        <input id="num" name="num" placeholder="7843789347" type="tel" maxlength="10">
+    </div>
+        <div>
+        <label for="date">date</label>
+        <input id="date" name="date" placeholder="dd/mm/yyyy" type="date">
+    </div>
+    <div>
+        <label for="time">time</label>
+        <input type="time" id="time" name="time">
+    </div>
+    <div>
+        <label for="file">upload</label>
+        <input type="file" id="file" name="file">
+    </div>
+    <div>
+        <input type="submit" value="Save this data">
+        <input type="reset" value="reset this data">
+        
+    </div>
+    </form>
+    <hr>
+
+    <form>
+        <div>
+        <select name="colour" id="colour">
+            <option value="red" selected>red</option>
+            <option value="blue" diabled>blue</option>
+            <option value="green">green</option>
+            <option value="yellow">yellow</option>
+        </select>
+    </div>
+    <!-- RADIO -->
+    <div>
+        <label>
+        <input type="radio" name="choices" id="ch1" value="one">choice 1
+    </label>
+    </div>
+    <div>
+        <label>
+        <input type="radio" name="choices" id="ch2" value="otwo">choice 2
+    </label>
+    </div>
+
+    <!-- CHECKBOX -->
+    <div>
+        <label>select an option</label>
+        <label>
+            <input type="checkbox" name="choices1" id="ch1" value="one">choice 1
+        </label>
+        <label>
+            <input type="checkbox" name="choices1" id="ch2" value="two">choice 2
+        </label>
+        <label>
+            <input type="checkbox" name="choices1" id="ch3" value="three">choice 3
+        </label>
+    </div>
+    <label>movies
+    <input type="text" name="movies" id="movies" list="movie-list">
+    <datalist id="movie-list">
+        <option value="avengers"></option>
+        <option value="martian"></option>
+        <option value="inception"></option>
+    </datalist>
+</label>
+    <input type="image" src="../images/image1.jpg" alt="img1" width="60" height="50">
+    <input type="range" name="ran" id="ran">
+    </form>
+</body>
+</html>
