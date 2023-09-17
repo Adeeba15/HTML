@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    background-color: rgb(149, 133, 133);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+#info{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 10px;
+    margin: 10px;
+    align-items: end;
+    align-content: space-around;
+    justify-content: end;
+}
+
+#skills{
+    line-height: 1.5rem;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+    background-color:beige;
+    color: black;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(8, 1, 1, 0.4);
+}
+
+#hob{
+    line-height: 1.5rem;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+    background-color:beige;
+    color: black;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(8, 1, 1, 0.4);
+}
+
+#per{
+    line-height: 1.5rem;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+    background-color:beige;
+    color: black;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(8, 1, 1, 0.4);
+}
+
+#intro{
+    line-height: 1.5rem;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background-color:beige;
+    color: black;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(8, 1, 1, 0.4);
+}
+
+.pro{
+    line-height: 1.5rem;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+    background-color:beige;
+    color: black;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(8, 1, 1, 0.4);
+}
+
+
+
+#details{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 10px;
+    margin: 10px;
+    justify-items: center;
+}
+
+#b1{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+
+#b2{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+
+#pic{
+    object-position: center;
+    object-fit: cover;
+    border-radius: 100px 100px 100px 100px;
+}
+
+h2,h3,h4{
+    text-decoration: underline;
+}
+
+table{
+    text-align: center;
+    padding: 10px;
+    margin: 2px;
+}
+    

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 2</title>
+    <style>
+        /* attribute selector */
+        input{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        [type='text']{
+            border: 1px solid black;
+            padding: 10px;
+            display: block;
+        }
+        .inp{
+            border: 1px solid black;
+            padding: 10px;
+            display: block;
+        }
+        /* properties that contain'*' is used to search the given word in the string of the tag like the href should contain .com in the end */
+        [href*=".com"]{
+            color: red;
+            background-color: yellow;
+        }
+        /* attr that ends with- $ is used for searching the end of the string */
+        [href$=".org"]{
+            color: blueviolet;
+            background-color: yellow;
+        }
+        /* attr that starts with= ^ is used for start searching */
+        [href^="http"]{
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <!-- to place side by side use only one div tag -->
+        <!-- to place linearly use different div tag -->
+        <form>
+            <input class="inp" type="text" name="username" placeholder="Username" >
+            <input class="inp" type="text" name="city" placeholder="city">
+            <input class="inp" type="text" name="country" placeholder="country">
+            <input class="inp" type="email" name="email" placeholder="email">
+            <input class="inp" type="password" name="password" placeholder="password">
+            <input class="inp" type="password" name="cpassword" placeholder="cpassword">
+            <label>
+                <input  class="inp" type="checkbox">i agree to terms and conditions.
+            </label>
+            <input type="submit" name="submit" value="submit">
+            
+        </form>
+    </div>
+    <ul>
+        <!-- target=blank opens webpage on a new window -->
+        <li><a href="google.com" target="_blank">Google</a></li>
+        <li><a href="https://www.facebook.com">Facebook</a></li>
+        <li><a href="https://twitter.com">Twitter</a></li>
+        <li><a href="http://www.linked.com">LinkedIn</a></li>
+        <li><a href="wikipedia.org">Wikipedia</a></li>
+    </ul>
+</body>
+</html>

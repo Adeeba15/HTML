@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+
+    p{
+        color: brown;
+        font-style: italic;
+    }
+    #first{
+        color: blueviolet;
+        font-style: italic;
+    }
+    .item{
+        color:blue;
+        font-style: normal;
+    }
+    subitem:hover{
+        color:blue;
+    }
+
+</style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit expedita quo et omnis officiis quia, a repellendus, dolor voluptatibus unde, ea eius cupiditate.
+    </p>
+    <h3>Selectors</h3>
+    <ul >
+        <li id="first"  >tag selector</li>
+        <ul>
+        <li>p {}</li>
+        <li>h1 {}</li>
+        <li>a {}</li>
+    </ul>
+    <li class="item">ID selector</li>
+    <ul>
+        <li>#menu {}</li>
+        <li>#header {}</li>
+        <li>#footer {}</li>
+    </ul>
+    <li class="item">class selector</li>
+    <ul>
+        <li>.item</li>
+        <li>.header</li>
+        <li>.footer</li>
+    </ul>
+    <li class="item">Pseudo class selelctor</li>
+    <ul class="subitem">
+        <li>a:hover {}</li>
+        <li>a:active {}</li>
+        <li>a:visited {}</li>
+    </ul>
+    </ul>
+    <!-- attribute selelctor are used to target attributes -->
+</body>
+</html>

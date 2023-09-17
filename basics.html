@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of JS</title>
+</head>
+<style>
+    #heading{
+        text-align: center;
+        text-decoration: underline;
+        color: rgb(81, 8, 94);
+        text-shadow: 1px;
+        text-transform: capitalize;
+        line-height: 100px;
+        background-color: rgb(229, 165, 202);
+    }
+
+    main{
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 5fr;
+        
+    }
+
+    .container{ 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+
+    .box{
+        background-color: rgb(237, 198, 136);
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    a{
+        text-align: center;
+        color: brown;
+        text-transform: capitalize;
+        font-size: large;
+        font-family:'Times New Roman', Times, serif;
+        place-items: center;
+        font-weight: bold;
+    }
+
+
+</style>
+<body>
+    <main>
+        <h1 id="heading">
+            The JavaScript Basics
+        </h1>
+        <div class="container">
+            <div class="box">
+                <a href="">Lorem, ipsum dolor.</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem delectus, obcaecati distinctio nam et, fuga aut earum nihil sequi porro fugit molestias quod sint doloribus odit harum, laudantium eum repellat.</p>
+            </div>
+            <div class="box">
+                <a href="">Soluta, nesciunt nobis!</a>
+                <p>Tempore nesciunt repudiandae ex sunt. Quam nostrum odio voluptatem ad iure deleniti sed quibusdam consequatur, saepe perferendis! Excepturi culpa voluptatem molestiae laborum veritatis mollitia! In nemo voluptate sed autem! Doloremque.</p>
+            </div>
+            <div class="box">
+                <a href="">Repudiandae, voluptates minima!</a>
+                <p>Quasi cumque nihil quis saepe et enim vel, incidunt voluptatibus repellat suscipit provident itaque quisquam laudantium? Magnam, quasi explicabo, libero fuga sint corrupti asperiores quas non, placeat similique labore nesciunt.</p>
+            </div>
+            <div class="box">
+                <a href="">Consequuntur, nihil atque.</a>
+                <p>Perspiciatis, atque! Earum nam illo consequuntur totam pariatur accusamus expedita impedit. Magni numquam veritatis, non voluptas iure et nesciunt expedita atque quae itaque. Temporibus beatae voluptates odit repellendus non nostrum!</p>
+            </div>
+            <div class="box">
+                <a href="">Nulla, incidunt ex.</a>
+                <p>Alias velit nobis excepturi maiores ipsum laudantium dolores dolore ullam, fugiat consequuntur. Eveniet est quis quod delectus maxime voluptates aliquid dignissimos dicta iusto qui? Temporibus pariatur magni alias eum cum.</p>
+            </div>
+            <div class="box">
+                <a href="">Explicabo, facilis harum.</a>
+                <p>Possimus sed earum nostrum et deleniti ipsum, doloremque aut cumque illum iste, fugiat ratione commodi accusamus eos a explicabo ea ipsa numquam ducimus adipisci quod. Ab maxime quo aliquid ullam!</p>
+            </div>
+            <div class="box">
+                <a href="">Ipsa, laborum tenetur!</a>
+                <p>Ratione nulla, sint adipisci veniam suscipit quaerat error. Quo, nihil eius rem, assumenda quia qui, iusto labore optio voluptate obcaecati doloribus maxime modi illo! Odit consequatur velit modi eveniet nesciunt.</p>
+            </div>
+            <div class="box">
+                <a href="">Delectus, rerum et.</a>
+                <p>Ex, laboriosam quasi ratione amet minima suscipit quas nisi, saepe sapiente incidunt accusantium quod hic. Quas quae minima deleniti assumenda facere sit, delectus repellat vitae. Id magnam ea autem voluptatum!</p>
+            </div>
+            <div class="box">
+                <a href="">Dolore, officiis dolores.</a>
+                <p>Facere provident, accusantium placeat quidem at earum praesentium, quisquam aperiam omnis quaerat, nemo perferendis iusto facilis harum voluptas? Nisi adipisci eligendi aliquam odio eius? Architecto dolorem minima commodi nisi dolorum.</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        console.log("JS works🐱‍🐉 ")
+        var paragraphs = document.querySelectorAll("p")  //select all p tags
+        console.log(paragraphs)
+
+        //for and forEach work same. Prefer forEach
+        paragraphs.forEach((p)=>{
+            p.style.color="blue"
+        })
+
+        for(var i=5; i<paragraphs.length; i++)
+        {
+            paragraphs[i].style.color="red";
+        }
+    </script>
+</body>
+</html>

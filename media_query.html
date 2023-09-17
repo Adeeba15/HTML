@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+
+        h2{
+            color:red;
+        }
+
+        ul{
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        li{
+            padding: 10px;
+            background-color: #ccc;
+            margin: 10px 0;
+        }
+
+        @keyframes shake{
+            0%{
+                transform: translateY(-1rem);
+            }
+
+            33%{
+                transform: translateY(1rem);
+            }
+
+            66%{
+                transform: rotateY(390deg);
+
+                background-color: red;
+
+            }
+        }
+
+        /* phone */
+        @media(min-width:600px) and (max-width:900px)
+        {
+            ul{
+                justify-content: center;
+                align-items: stretch;
+                height: 300px;
+                gap: 2px;
+            }
+            li{padding: 10px;
+            background-color: #ccc;
+            margin: 0;
+            border-radius: 100px;
+            animation: shake 1s infinite;}
+            
+        }
+        
+
+        /* tablet */
+        @media(min-width:600px) and (max-width:900px)
+        {
+            h2{
+                color: blueviolet;
+            }
+
+            li{
+                /* animation: shake 1s infinite; */
+                 animation-name: shake;
+                animation-duration: 1s;
+                animation-iteration-count: 5;
+                animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+                animation-direction: alternate;
+                /* used with js */
+                /* animation-play-state: paused; */
+            
+            }
+
+                li:first-child{
+                    animation-delay:100ms ;
+                }
+            }
+
+        
+
+        /* desktop */
+        @media(min-width:900px)
+        {
+
+        }
+
+        /* extra large screen */
+        @media(min-width:1200px)
+        {
+
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h2>Welcome to Media Query</h2>
+        <ul>
+            <li>dffd</li>
+            <li>gdfgdfv</li>
+            <li>rfgdf</li>
+            <li>frtgfdv</li>
+            <li>fdgfdv </li>
+            <li>trgdxfrt</li>
+        </ul>
+    </main>
+</body>
+</html>
